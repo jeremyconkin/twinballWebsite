@@ -55,6 +55,7 @@ jobs:
             - vendor/bundle
       - run:
           name: Jekyll build
+          exclude: vendor
           command: JEKYLL_ENV=production bundle exec jekyll build
       - run:
           name: Remove .html extension
